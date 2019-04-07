@@ -1,6 +1,7 @@
 .catalog-card__title,
 .catalog-card__like {
   @include text(14px, 24px);
+  color: $color-text-title;
 }
 
 .catalog-card__author {

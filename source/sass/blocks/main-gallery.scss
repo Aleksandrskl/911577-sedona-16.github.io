@@ -1,0 +1,12 @@
+@mixin heding-gallery ($font-size: 18px, $line-height: 26px, $font-weight: 700, $color: #000000) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+.main-gallery__photo {
+ @include heding-gallery;
+}
+.main-gallery__description {
+  line-height: 24px;
+}

@@ -1,0 +1,16 @@
+$body-fz: 14px;
+$body-color: #333333;
+$body-text-transform: uppercase;
+$main-font: "PT Sans", "Arial", sans-serif;
+body {
+  font-size: $body-fz;
+  font-family: $main-font;
+  color: $body-color;
+  text-transform: $body-text-transform;
+}
+.list-reset {
+  list-style: none;
+}
+.advantages-sedona__item, .site-list__item, .social__item  {
+  @extend .list-reset;
+}

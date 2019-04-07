@@ -1,0 +1,17 @@
+@mixin catalog-title ($font-size: 14px, $line-height: 24px, $font-weight: 700, $color: #000000) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+.catalog-card__title, .catalog-card__like {
+  @include catalog-title;
+}
+@mixin catalog-description ($line-height: 24px, $font-weight: 400, $text-transform: none) {
+  text-transform: $text-transform;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+.catalog-card__author {
+  @include catalog-description;
+}

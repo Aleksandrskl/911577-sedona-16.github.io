@@ -1,0 +1,18 @@
+$color-heading: #000000;
+@mixin footer-title ($font-size: 21px, $line-height: 26px, $font-weight: 700, $color: #000000) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color-heading;
+}
+.page-footer__title {
+  @include footer-title;
+}
+.copyright__text {
+  font-weight: 400;
+  line-height: 26px;
+  color: $color-heading;
+}
+.social__link, .copyright__link {
+  text-decoration: none;
+}

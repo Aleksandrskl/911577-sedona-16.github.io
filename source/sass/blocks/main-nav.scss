@@ -2,10 +2,12 @@ $base-color: #81b3d2;
 $color-text: #ffffff;
 $heading-fz: 18px;
 $font-weight: 700;
+
 .site-list__item {
   font-size: $heading-fz;
   background-color: $base-color;
   font-weight: $font-weight;
+
   a {
     color: $color-text;
     text-decoration: none;

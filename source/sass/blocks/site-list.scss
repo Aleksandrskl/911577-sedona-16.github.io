@@ -1,0 +1,9 @@
+.site-list__item {
+  background-color: $background-color-auxiliary;
+}
+
+.site-list__link {
+  @include text;
+  color: $color-text-light;
+  text-decoration: none;
+}

@@ -1,32 +1,6 @@
-$body-fz: 14px;
-$body-color: #333333;
-$body-text-transform: uppercase;
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("boldwoff2"),
-    url("../fonts/ptsansbold.woff") format("boldwoff");
-  font-weight: 700;
-  font-style: normal;
-}
-
 body {
-  font-size: $body-fz;
-  font-family: $main-font;
-  color: $body-color;
-  text-transform: $body-text-transform;
-}
-
-.main-nav__list,
-.advantages-sedona__list,
-.social__list {
-  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
 }

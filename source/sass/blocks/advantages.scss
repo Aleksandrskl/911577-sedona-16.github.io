@@ -1,17 +1,8 @@
-$color-heading: #000000;
-$line-height-description: 21px;
-
-@mixin heading ($font-size: 18px, $line-height: 26px, $font-weight: 700) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-}
-
 .advantages__slogan {
-  @include heading;
-  color: $color-heading;
+  @include text;
+  color: $color-text-title;
 }
 
 .advantages__description {
-  line-height: $line-height-description;
+  line-height: 26px;
 }

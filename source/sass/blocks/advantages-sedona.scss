@@ -1,38 +1,25 @@
-$base-color: #81b3d2;
-$background-color: #eeeeee;
-$color-text: #ffffff;
-$color-heading: #000000;
-$line-height-description: 21px;
-
 .advantages-sedona__gist {
-  background-color: $base-color;
-  color: $color-text;
-}
-
-@mixin heading ($font-size: 18px, $line-height: 26px, $font-weight: 700) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
+  background-color: $background-color-auxiliary;
+  color: $color-text-light;
 }
 
 .advantages-sedona__title {
-  @include heading;
+  @include text;
 }
 
 .advantages-sedona__services {
-  @include heading;
-  color: $color-heading;
+  @include text;
+  color: $color-text-title;
 }
 
 .advantages-sedona--background {
-  background-color: $background-color;
+  background-color: $background-color-extra;
 
-  h3 {
-    @include heading;
-    color: $color-heading;
+  .advantages-sedona__title {
+    color: $color-text-title;
   }
 }
 
-.advantages-sedona__description {
-  line-height: $line-height-description;
+.advantages-sedona__list {
+  list-style: none;
 }

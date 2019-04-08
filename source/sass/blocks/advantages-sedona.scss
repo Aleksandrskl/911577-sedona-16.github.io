@@ -1,0 +1,25 @@
+.advantages-sedona__gist {
+  background-color: $background-color-auxiliary;
+  color: $color-text-light;
+}
+
+.advantages-sedona__title {
+  @include text;
+}
+
+.advantages-sedona__services {
+  @include text;
+  color: $color-text-title;
+}
+
+.advantages-sedona--background {
+  background-color: $background-color-extra;
+
+  .advantages-sedona__title {
+    color: $color-text-title;
+  }
+}
+
+.advantages-sedona__list {
+  list-style: none;
+}

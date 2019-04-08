@@ -1,0 +1,8 @@
+.main-gallery__photo {
+  @include text;
+  color: $color-text-title;
+}
+
+.main-gallery__description {
+  line-height: 24px;
+}

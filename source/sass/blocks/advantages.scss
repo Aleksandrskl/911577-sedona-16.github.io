@@ -1,0 +1,8 @@
+.advantages__slogan {
+  @include text;
+  color: $color-text-title;
+}
+
+.advantages__description {
+  line-height: 26px;
+}

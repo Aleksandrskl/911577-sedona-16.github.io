@@ -3,3 +3,25 @@
   background-repeat: no-repeat;
   min-height: 389px;
 }
+
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1200px;
+  }
+
+  .page-main__welcome {
+    background-size: 1200px;
+    min-height: 518px;
+  }
+}

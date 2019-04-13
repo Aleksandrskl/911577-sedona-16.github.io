@@ -1,3 +1,35 @@
 .main-nav__list {
+  min-height: 55px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.main-nav {
+  width: 320px;
+  min-height: 220px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+  }
+
+  .main-nav__wrapper {
+    width: 1200px;
+  }
 }

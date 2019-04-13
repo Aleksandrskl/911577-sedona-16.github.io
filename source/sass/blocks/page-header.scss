@@ -1,3 +1,37 @@
 .page-header__logo-image {
   background-color: $color-text-light;
 }
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  margin: 0 auto;
+  height: 83px;
+  order: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+
+  .page-header__logo {
+    height: 83px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__logo {
+    height: 96px;
+    order: 0;
+  }
+}

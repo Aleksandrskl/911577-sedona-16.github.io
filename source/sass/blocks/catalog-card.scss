@@ -8,3 +8,36 @@
   @include text(14px, 24px, 400);
   text-transform: none;
 }
+
+.catalog-card {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    padding: 0;
+    width: 320px;
+    min-height: 347px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .card--top {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card {
+    width: 390px;
+    min-height: auto;
+  }
+
+  .card--top {
+    width: 100%;
+  }
+}

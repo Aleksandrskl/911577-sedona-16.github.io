@@ -1,4 +1,10 @@
+.advantages-sedona {
+  width: 320px;
+}
+
 .advantages-sedona__gist {
+  margin: 0 auto;
+  padding: 33px 41px 33px 41px;
   background-color: $background-color-auxiliary;
   color: $color-text-light;
 }
@@ -17,9 +23,85 @@
 
   .advantages-sedona__title {
     color: $color-text-title;
+    margin: 0;
   }
+}
+
+.advantages-sedona__description {
+  margin: 0;
 }
 
 .advantages-sedona__list {
   list-style: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-sedona__gist {
+    width: 162px;
+    margin: 0;
+    padding: 46px 47px 49px 47px;
+  }
+
+  .advantages-sedona {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages-sedona__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .advantages-sedona__item {
+    width: 150px;
+    padding: 65px 53px 53px;
+  }
+
+  .advantages-sedona-wrapper {
+    display: flex;
+    width: 768px;
+  }
+
+  .advantages-sedona--background {
+    width: 150px;
+    padding: 65px 53px 53px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-sedona__gist {
+    width: 265px;
+    margin: 0;
+    padding: 53px 67px 63px 68px;
+  }
+
+  .advantages-sedona {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages-sedona__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .advantages-sedona__item {
+    width: 265px;
+    padding: 60px 67px 80px 68px;
+  }
+
+  .advantages-sedona-wrapper {
+    display: flex;
+    width: 1200px;
+  }
+
+  .advantages-sedona--background {
+    width: 265px;
+    padding: 65px 70px 70px;
+    margin: 0;
+  }
 }

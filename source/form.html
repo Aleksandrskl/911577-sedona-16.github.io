@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>sedona form-mobile</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +12,6 @@
       <img class="page-header__logo-image" src=http://placehold.it/150x100 width="150" height="100" alt="Sedona">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -27,13 +27,14 @@
             <a class="site-list__link" href="https://htmlacademy.ru/">HTML academy</a>
           </li>
         </ul>
+        <button class="site-list__toggle" type="button">Открыть меню</button>
       </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Седона - поиск гостинниц с одноименным названием</h1>
-    <div class="welcome-sedona">
-      <img class="welcome-sedona__image" src=http://placehold.it/150x100 width="150" height="100" alt="Приветствие">
+    <div class="page-main__welcome">
+      <img class="page-main__welcome__sedona-image" src=http://placehold.it/150x100 width="150" height="100" alt="Приветствие">
     </div>
   </main>
   <footer class="page-footer">

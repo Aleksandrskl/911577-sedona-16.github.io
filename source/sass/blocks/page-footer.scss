@@ -2,3 +2,38 @@
   @include text(21px);
   color: $color-text-title;
 }
+
+.page-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__wrapper {
+  padding: 30px 85px 30px 85px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    width: 768px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    padding: 36px 60px 36px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    width: 1200px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    padding: 36px 120px 36px 120px;
+  }
+}

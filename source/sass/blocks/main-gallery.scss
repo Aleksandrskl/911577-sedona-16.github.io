@@ -6,3 +6,38 @@
 .main-gallery__description {
   line-height: 24px;
 }
+
+.main-gallery__exordium {
+  width: 269px;
+  padding: 40px 24px 33px 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-gallery {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .main-gallery__exordium {
+    width: 428px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-gallery__exordium {
+    width: 428px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin: 0 auto;
+  }
+
+  .main-gallery {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 85px;
+  }
+}

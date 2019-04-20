@@ -4,43 +4,71 @@
 
 .advantages-sedona__gist {
   margin: 0 auto;
-  padding: 33px 41px 33px 41px;
+  padding: 36px 27px 25px 27px;
   background-color: $background-color-auxiliary;
   color: $color-text-light;
 }
 
 .advantages-sedona__title {
   @include text;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .advantages-sedona__services {
   @include text;
   color: $color-text-title;
-}
-
-.advantages-sedona--background {
-  background-color: $background-color-extra;
-
-  .advantages-sedona__title {
-    color: $color-text-title;
-    margin: 0;
-  }
-}
-
-.advantages-sedona__description {
   margin: 0;
 }
 
 .advantages-sedona__list {
+  min-height: 416px;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.advantages-sedona__item {
+  padding-left: 70px;
+  padding-top: 30px;
+  text-align: left;
+  padding-bottom: 0;
+}
+
+.advantages-sedona__text {
+  margin-bottom: 0;
+  margin-top: 13px;
+}
+
+.advantages-sedona--background {
+  padding: 22px 41px 24px 41px;
+  width: 238px;
+  background-color: $background-color-extra;
+
+  .advantages-sedona__title {
+    color: $color-text-title;
+    margin-bottom: 8px;
+  }
+
+  .advantages-sedona__text-background {
+    margin-bottom: 7px;
+    margin-top: 17px;
+  }
+
+  .advantages-sedona__description {
+    margin-top: 15px;
+    margin-bottom: 4px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages-sedona__gist {
     width: 162px;
+    padding-top: 48px;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-bottom: 23px;
     margin: 0;
-    padding: 46px 47px 49px 47px;
   }
 
   .advantages-sedona {
@@ -51,12 +79,22 @@
 
   .advantages-sedona__list {
     display: flex;
+    min-height: 330px;
     margin: 0;
   }
 
   .advantages-sedona__item {
-    width: 150px;
-    padding: 65px 53px 53px;
+    width: 156px;
+    text-align: center;
+    padding: 162px 50px 39px 50px;
+  }
+
+  .advantages-sedona__text {
+    margin-top: 21px;
+  }
+
+  .advantages-sedona__services {
+    @include text(21px);
   }
 
   .advantages-sedona-wrapper {
@@ -65,9 +103,45 @@
   }
 
   .advantages-sedona--background {
-    width: 150px;
-    padding: 65px 53px 53px;
+    width: 156px;
+    padding: 46px 50px 36px 50px;
     margin: 0;
+  }
+
+  .advantages-sedona--background .advantages-sedona__title {
+    margin-bottom: 10px;
+  }
+
+  .advantages-sedona--background .advantages-sedona__text-background {
+    margin-top: 21px;
+  }
+
+  .advantages-sedona__title {
+    @include text(21px);
+    margin-bottom: 12px;
+  }
+
+  .advantages-sedona__number {
+    padding-left: 49px;
+    padding-right: 48px;
+  }
+
+  .advantages-sedona__description {
+    margin-bottom: 0;
+    margin-top: 19px;
+  }
+
+  .advantages-sedona__devil-bridge {
+    order: 1;
+    height: 256px;
+  }
+
+  .advantages-sedona__bridge {
+    order: 2;
+  }
+
+  .advantages-sedona__housing-image {
+    height: 256px;
   }
 }
 
@@ -75,7 +149,7 @@
   .advantages-sedona__gist {
     width: 265px;
     margin: 0;
-    padding: 53px 67px 63px 68px;
+    padding: 54px 67px 51px 68px;
   }
 
   .advantages-sedona {
@@ -90,8 +164,8 @@
   }
 
   .advantages-sedona__item {
-    width: 265px;
-    padding: 60px 67px 80px 68px;
+    width: 300px;
+    padding: 162px 50px 39px 50px;
   }
 
   .advantages-sedona-wrapper {
@@ -101,7 +175,12 @@
 
   .advantages-sedona--background {
     width: 265px;
-    padding: 65px 70px 70px;
+    padding: 47px 70px 56px;
     margin: 0;
+  }
+
+  .advantages-sedona__number {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }

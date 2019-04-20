@@ -1,15 +1,19 @@
 .main-gallery__photo {
   @include text;
   color: $color-text-title;
+  margin-bottom: 27px;
+  margin-top: 0;
 }
 
 .main-gallery__description {
   line-height: 24px;
+  margin: 0;
 }
 
 .main-gallery__exordium {
-  width: 269px;
-  padding: 40px 24px 33px 27px;
+  text-align: center;
+  padding: 36px 25px 26px 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,22 +24,27 @@
 
   .main-gallery__exordium {
     width: 428px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 76px;
+    padding-bottom: 71px;
     margin: 0 auto;
+    border: none;
+  }
+
+  .main-gallery__photo {
+    @include text(30px, 26px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-gallery__exordium {
     width: 428px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 76px;
+    padding-bottom: 71px;
     margin: 0 auto;
   }
 
   .main-gallery {
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 85px;

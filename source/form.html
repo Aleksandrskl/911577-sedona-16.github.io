@@ -8,17 +8,17 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" src=http://placehold.it/150x100 width="150" height="100" alt="Sedona">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="file:///C:/Users/sklar/Downloads/cmder/sedona/source/index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="file:///C:/Users/sklar/Downloads/cmder/sedona/source/photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link">Форма отзыва</a>
@@ -27,43 +27,59 @@
             <a class="site-list__link" href="https://htmlacademy.ru/">HTML academy</a>
           </li>
         </ul>
-        <button class="site-list__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Седона - поиск гостинниц с одноименным названием</h1>
-    <div class="page-main__welcome">
+    <div class="page-main__welcome page-main__welcome-form">
       <img class="page-main__welcome__sedona-image" src=http://placehold.it/150x100 width="150" height="100" alt="Приветствие">
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <b class="page-footer__title">#visitsedona!</b>
+      <b class="page-footer__title">#visitsedona</b>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              Мы есть в Твитере
+            <a class="social__link social__link--twitter" href="#" aria-label="Мы есть в Твитере">
+              Твитер
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              Мы есть в Фейсбуке
+            <a class="social__link social__link--facebook" href="#" aria-label="Мы есть на Фейсбуке">
+              Фейсбук
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              Мы есть на Ютубе
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы есть на Ютубе">
+              Ютуб
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Официальный сайт HTML Academy"></a>
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 </html>

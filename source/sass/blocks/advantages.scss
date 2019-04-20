@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  text-align: center;
   flex-wrap: wrap;
 }
 
@@ -12,33 +13,49 @@
 }
 
 .advantages__description {
+  margin: 0;
+  margin-top: 27px;
   line-height: 26px;
 }
 
 .advantages__exordium {
   width: 256px;
-  margin: 0 auto;
-  padding: 43px 32px 20px 32px;
+  margin-bottom: 21px;
+  padding: 38px 32px 27px 32px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages__exordium {
-    width: 490px;
-    padding: 51px 139px 55px 139px;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 49px;
+    min-height: 105px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    width: 500px;
   }
 
   .advantages {
     width: 768px;
+  }
+
+  .advantages__slogan {
+    @include text(21px);
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__exordium {
     width: 490px;
-    padding: 0;
   }
 
   .advantages {
     width: 1200px;
+  }
+
+  .advantages-sedona__title {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

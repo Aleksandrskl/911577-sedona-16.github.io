@@ -3,24 +3,36 @@
 }
 
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding-bottom: 56px;
   width: 320px;
   margin: 0 auto;
 }
 
 .page-header__logo {
-  margin: 0 auto;
+  position: absolute;
+  bottom: -27px;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  text-align: center;
   height: 83px;
   order: 1;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    position: relative;
     width: 768px;
+    padding: 0;
   }
 
   .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
     height: 83px;
   }
 }
@@ -32,6 +44,5 @@
 
   .page-header__logo {
     height: 96px;
-    order: 0;
   }
 }

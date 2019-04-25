@@ -86,7 +86,12 @@
   .advantages-sedona__item {
     width: 156px;
     text-align: center;
-    padding: 162px 50px 39px 50px;
+    padding: 162px 49px 39px 50px;
+  }
+
+  .advantages-sedona__item:nth-child(2) {
+    order: 3;
+    width: 162px;
   }
 
   .advantages-sedona__text {
@@ -136,10 +141,6 @@
     height: 256px;
   }
 
-  .advantages-sedona__bridge {
-    order: 2;
-  }
-
   .advantages-sedona__housing-image {
     height: 256px;
   }
@@ -183,4 +184,10 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+
+  .advantages-sedona__img {
+    width: 800px;
+    height: 256px;
+  }
+
 }

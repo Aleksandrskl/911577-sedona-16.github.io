@@ -49,7 +49,13 @@
   }
 
   .site-list__item {
-    padding: 15px 40px;
+    width: 123px;
+    padding: 14px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 155px;
+    width: 112px;
   }
 
   .site-list__item a {
@@ -78,6 +84,15 @@
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    min-height: 56px;
+  }
+
+  .site-list__item {
+    width: 209px;
+    padding: 14px 60px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 242px;
+    width: 209px;
   }
 }

@@ -1,0 +1,18 @@
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  background-color: $background-color-main;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+  }
+}

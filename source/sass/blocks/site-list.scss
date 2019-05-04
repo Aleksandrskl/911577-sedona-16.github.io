@@ -20,14 +20,14 @@
 
 .site-list a[href] {
   &:hover {
-    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
     background-color: #669ec0;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
 
   &:active {
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
-    background-color: #5496bd;
   }
 }
 
@@ -49,7 +49,13 @@
   }
 
   .site-list__item {
-    padding: 15px 40px;
+    width: 123px;
+    padding: 14px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 155px;
+    width: 112px;
   }
 
   .site-list__item a {
@@ -61,7 +67,7 @@
   .site-list__item a[href] {
     &:hover {
       color: #81b3d2;
-      background-color: $background-color-main;
+      background: none;
       box-shadow: none;
     }
 
@@ -78,6 +84,15 @@
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    min-height: 56px;
+  }
+
+  .site-list__item {
+    width: 209px;
+    padding: 14px 60px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 242px;
+    width: 209px;
   }
 }

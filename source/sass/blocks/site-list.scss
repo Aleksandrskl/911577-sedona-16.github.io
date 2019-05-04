@@ -20,14 +20,14 @@
 
 .site-list a[href] {
   &:hover {
-    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
     background-color: #669ec0;
+    box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
   }
 
   &:active {
+    background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
-    background-color: #5496bd;
   }
 }
 
@@ -67,7 +67,7 @@
   .site-list__item a[href] {
     &:hover {
       color: #81b3d2;
-      background-color: $background-color-main;
+      background: none;
       box-shadow: none;
     }
 

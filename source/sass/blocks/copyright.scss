@@ -5,5 +5,23 @@
 }
 
 .copyright__link {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
   text-decoration: none;
+}
+
+.copyright__link:hover {
+  fill: $background-color-auxiliary;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+  fill: $color-text-title;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-top: 8px;
+  }
 }

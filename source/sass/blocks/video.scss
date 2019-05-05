@@ -1,0 +1,49 @@
+.video {
+  padding-bottom: 115px;
+}
+
+.video__presentation {
+  text-align: center;
+  padding-top: 37px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 26px;
+}
+
+.video__title {
+  @include text;
+  margin: 0;
+  margin-bottom: 27px;
+  color: $color-text-title;
+}
+
+.video__description {
+  line-height: 24px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .video {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+  }
+
+  .video__presentation {
+    padding-top: 65px;
+    width: 480px;
+    margin: 0 auto;
+  }
+
+  .video__title {
+    @include text(30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 85px;
+  }
+}

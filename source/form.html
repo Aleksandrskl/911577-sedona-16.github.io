@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>sedona form-mobile</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>sedona form-mobile</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="picturefill.js" async></script>
 </head>
 <body>
   <svg style="display: none;">
@@ -28,6 +29,9 @@
       </g>
       </g>
     </symbol>
+    <symbol id="logo_academy" viewBox="0 0 26.943 34.09">
+      <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+    </symbol>
     <symbol id="text_sedona" viewBox="0 0 459.754 79.805">
       <g>
         <path fill="#FFFFFF" d="M44.466,21.738c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489C47.248,34.74,55.287,40,55.287,52.11c0,7.445-1.787,15.088-7.742,20.149 c-5.855,4.964-13.697,7.048-21.24,7.048c-9.43,0-18.661-3.177-26.305-8.537l8.338-15.683c4.865,4.269,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.345-11.812-8.535C11.019,43.274,2.978,40.101,2.978,25.607 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.466,21.738z"/>
@@ -39,85 +43,206 @@
       </g>
     </symbol>
   </svg>
-<div class="wrapper">
+  <div class="wrapper">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-          </picture>
-        </a>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">HTML academy</a>
-            </li>
-          </ul>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        </nav>
-      </header>
-      <main class="page-main">
-        <h1 class="visually-hidden">Седона - поиск гостинниц с одноименным названием</h1>
-        <div class="page-main__welcome page-main__welcome-form">
-          <svg width="229" height="39">
-            <use xlink:href="#text_sedona"></use>
-          </svg>
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
-                <img src="img/bg-intro-triangle-mobile.svg" alt="Sedona">
-              </picture>
-            </div>
-          </main>
-          <footer class="page-footer">
-            <div class="page-footer__wrapper">
-              <b class="page-footer__title">#visitsedona</b>
-              <div class="page-footer__social social">
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a class="social__link social__link--twitter" href="#" aria-label="Мы есть в Твитере">
-                      <svg width="30" height="40">
-                        <use xlink:href="#social_twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#" aria-label="Мы есть на Фейсбуке">
-                      <svg width="30" height="40">
-                        <use xlink:href="#social_facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a class="social__link social__link--youtube" href="#" aria-label="Мы есть на Ютубе">
-                      <svg width="30" height="40">
-                        <use xlink:href="#social_youtube"></use>
-                      </svg>
-                    </a>
-                </li>
-              </ul>
-            </div>
-            <div class="page-footer__copyright copyright">
-              <b class="copyright__text">Разработано:</b>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Официальный сайт HTML Academy">
-                <svg width="27" height="34">
-                  <use xlink:href="#logo_academy"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </footer>
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru/">HTML academy</a>
+        </li>
+      </ul>
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Седона - поиск гостинниц с одноименным названием</h1>
+    <div class="page-main__welcome page-main__welcome-form">
+      <svg width="229" height="39">
+        <use xlink:href="#text_sedona"></use>
+      </svg>
+    </div>
+    <div class="comment comment--divided">
+      <h1 class="comment__title">Оставьте свой отзыв</h1>
+      <p class="comment__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    <form class="feeadback" action="https://echo.htmlacademy.ru/" method="post">
+    <fieldset class="feeadback__section">
+    <legend class="feeadback__section-title feeadback__section-title--left">
+      Представьтесь:
+    </legend>
+    <div class="textbox">
+      <label class="textbox__title" for="firstname">Имя:
+      </label>
+      <div class="textbox__inner">
+        <input class="textbox__input" id="firstname" type="text" name="firstname" placeholder="Петр" required>
       </div>
-      <script src="js/menu.js"></script>
-    </body>
-    </html>
+    </div>
+    <div class="textbox">
+      <label class="textbox__title" for="surname">Фамилия:
+      </label>
+      <div class="textbox__inner">
+        <input class="textbox__input" id="surname" type="text" name="surname" placeholder="Иванов">
+      </div>
+    </div>
+    <div class="textbox">
+      <label class="textbox__title" for="midname">Отчество:
+      </label>
+      <div class="textbox__inner">
+        <input class="textbox__input" id="midname" type="text" name="midname" placeholder="Александрович">
+      </div>
+    </div>
+    </fieldset>
+    <fieldset class="feeadback__section">
+    <legend class="feeadback__section-title">
+      Контактная информация:
+    </legend>
+    <div class="feeadback__section-body feeadback__section-body--contacts">
+      <div class="textbox textbox--contacts">
+      <label class="textbox__title textbox__title--feeadback-contacts" for="phone">
+        <span class="textbox__contacts-mark">Контактный</span> телефон*:
+      </label>
+      <div class="textbox__inner textbox__phone textbox__inner--contacts">
+        <input class="textbox__input" id="phone" type="tel" name="phone" placeholder="Введите телефон" pattern="2-[0-9]{3}-[0-9]{3}">
+      </div>
+      </div>
+      <div class="textbox textbox--contacts">
+      <label class="textbox__title textbox__title--feeadback-contacts" for="email">Электронная почта*:
+      </label>
+      <div class="textbox__inner textbox__mail textbox__inner--contacts">
+        <input class="textbox__input" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+      </div>
+      </div>
+    </div>
+    </fieldset>
+    <fieldset class="feeadback__section">
+    <legend class="feeadback__section-title feeadback__section-title--left">
+      Ваше общее впечатление:
+    </legend>
+    <div class="togle-set">
+      <div class="togle-set__item">
+        <input class="togle-set__input" id="value1" type="radio" name="rating" checked>
+        <label class="togle-set__title" for="value1">
+          Скорее положительное
+        </label>
+      </div>
+    </div>
+    <div class="togle-set">
+      <div class="togle-set__item">
+        <input class="togle-set__input" id="value2" type="radio" name="rating">
+        <label class="togle-set__title" for="value2">
+          Скорее отрицательное
+        </label>
+      </div>
+    </div>
+    <div class="togle-set">
+      <div class="togle-set__item">
+        <input class="togle-set__input" id="value3" type="radio" name="rating">
+        <label class="togle-set__title" for="value3">
+          Затрудняюсь ответить
+        </label>
+      </div>
+    </div>
+    </fieldset>
+    <fieldset class="feeadback__section">
+    <legend class="feeadback__section-title">
+      Посещенные достопримечательности:
+    </legend>
+    <div class="checkbox-set">
+      <div class="checkbox-set__item">
+        <input class="checkbox-set__input" type="checkbox" name="check1" id="check1" checked="">
+        <label class="checkbox-set__title" for="check1">
+          Мост Дьявола
+        </label>
+      </div>
+      <div class="checkbox-set__item">
+        <input class="checkbox-set__input" type="checkbox" name="check2" id="check2" checked="">
+        <label class="checkbox-set__title" for="check2">
+          Слайд-парк
+        </label>
+      </div>
+      <div class="checkbox-set__item">
+        <input class="checkbox-set__input" type="checkbox" name="check3" id="check3">
+        <label class="checkbox-set__title" for="check3">
+          Гора-Колокол
+        </label>
+      </div>
+      <div class="checkbox-set__item">
+        <input class="checkbox-set__input" type="checkbox" name="check4" id="check4" checked="">
+        <label class="checkbox-set__title" for="check4">
+          Красные скалы
+        </label>
+      </div>
+    </div>
+    </fieldset>
+    <fieldset class="feeadback__section">
+    <legend class="feeadback__section-title">
+      Опишите свои эмоции:
+    </legend>
+    <div class="textbox">
+      <textarea class="textbox__input textbox__input--feedback-description" name="overview" id="overview" placeholder="Опишите подробно все свои восторги"></textarea>
+    </div>
+    <div class="feeadback__section-body">
+    <button class="feeadback__button btn" type="submit">Отправить отзыв</button>
+    <span class="feeadback__send-mark">* — обязательные поля</span>
+  </div>
+    </fieldset>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <b class="page-footer__title">#visitsedona</b>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Мы есть в Твитере">
+              <svg width="30" height="40">
+                <use xlink:href="#social_twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Мы есть на Фейсбуке">
+              <svg width="30" height="40">
+                <use xlink:href="#social_facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы есть на Ютубе">
+              <svg width="30" height="40">
+                <use xlink:href="#social_youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Официальный сайт HTML Academy">
+          <svg width="27" height="34">
+            <use xlink:href="#logo_academy"></use>
+          </svg>
+        </a>
+      </div>
+      </div>
+  </footer>
+  </div>
+  <script src="js/menu.js"></script>
+</body>
+</html>

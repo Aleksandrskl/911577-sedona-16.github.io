@@ -6,13 +6,14 @@
 }
 
 .catalog-card__like {
-  margin-top: 5px;
+  display: flex;
+  margin-top: 10px;
   vertical-align: bottom;
 }
 
 .catalog-card__like svg {
   opacity: 0.3;
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 .catalog-card__author {
@@ -32,16 +33,17 @@
 }
 
 .catalog-card__footer {
-  padding-top: 15px;
-}
-
-.catalog-card__wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 15px;
 }
 
 .catalog-card__wrapper img {
   vertical-align: bottom;
+}
+
+.catalog-card__image {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,10 +73,14 @@
   }
 
   .catalog-card__like {
-    top: 20px;
-    margin-top: 8px;
     position: absolute;
-    right: 20px;
+    right: 0;
+    top: 17px;
+    min-width: 86px;
+  }
+
+  .catalog-card__like svg {
+    margin-right: 10px;
   }
 }
 

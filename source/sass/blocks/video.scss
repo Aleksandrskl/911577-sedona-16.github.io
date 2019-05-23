@@ -1,13 +1,13 @@
 .video {
-  padding-bottom: 115px;
+  padding-bottom: 43px;
 }
 
 .video__presentation {
   text-align: center;
-  padding-top: 37px;
+  padding-top: 34px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 26px;
+  padding-bottom: 32px;
 }
 
 .video__title {
@@ -22,28 +22,173 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+.video__content {
+  position: relative;
+}
+
+.video__controls {
+  position: relative;
+  width: 280px;
+  padding-top: 26px;
+  padding-bottom: 21px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.video__wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  min-height: 45px;
+  top: -45px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 22px;
+}
+
+.video__seek {
+  cursor: pointer;
+  padding: 22px 0 20px;
+}
+
+.video__scale {
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__bar {
+  height: 2px;
+  width: 40px;
+  position: relative;
+}
+
+.video__bar::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.video__btn {
+  background-color: transparent;
+  border: none;
+  fill: #5c6870;
+  padding: 0;
+  vertical-align: top;
+}
+
+.video__replay {
+  margin-left: 24px;
+  margin-right: 130px;
+}
+
+.video__btn:hover {
+  fill: #333333;
+}
+
+.video__btn:active {
+  opacity: 0.3;
+}
+
+.video__subtitle {
+  margin-right: 28px;
+}
+
+@media (min-width: $tablet-width) {
   .video {
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 48px;
+  }
+
+  .video__description {
+    padding-right: 25px;
+    padding-left: 24px;
+  }
+
+  .video__controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .video__btn {
+    fill: #ffffff;
+    display: inline-block;
+    margin: 0;
+    padding: 15px;
+    width: auto;
+    height: auto;
+  }
+
+  .video__btn:hover {
+    fill: #ffffff;
+    opacity: 0.6;
+  }
+
+  .video__btn:active {
+    opacity: 0.3;
+  }
+
+  .video__replay {
+    margin-left: 19px;
+  }
+
+  .video__bar::after {
+    left: 115px;
+  }
+
+  .video__wrapper {
+    position: static;
+    top: auto;
+    padding: 0;
+    margin: 0 23px;
+    width: 390px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+
+  .video__seek {
+    padding: 25px 0;
   }
 
   .video__presentation {
     padding-top: 65px;
+    padding-bottom: 73px;
     width: 480px;
     margin: 0 auto;
   }
 
   .video__title {
     @include text(30px);
+    margin-bottom: 31px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .video {
     width: 800px;
     margin: 0 auto;
     padding-bottom: 85px;
+  }
+
+  .video__wrapper {
+    width: 540px;
+  }
+
+  .video__presentation {
+    padding-top: 70px;
+    padding-bottom: 71px;
+    width: 480px;
   }
 }

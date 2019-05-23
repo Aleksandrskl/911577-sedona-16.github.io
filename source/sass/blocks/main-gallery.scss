@@ -10,6 +10,11 @@
   margin: 0;
 }
 
+.main-gallery__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .main-gallery__exordium {
   text-align: center;
   padding: 36px 25px 26px 25px;

@@ -1,0 +1,58 @@
+.togle-set {
+  margin-bottom: 20px;
+}
+
+.togle-set__item {
+  margin-bottom: 13px;
+}
+
+.togle-set__input {
+  display: none;
+}
+
+.togle-set__title {
+  position: relative;
+  display: block;
+  padding-left: 75px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 56px;
+  text-align: left;
+  color: $color-text-title;
+  text-transform: none;
+}
+
+.togle-set__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border: 18px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.togle-set__input:checked + .togle-set__title::before {
+  background-color: $color-text-main;
+}
+
+.togle-set__title:hover::before {
+  border: solid 18px #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.togle-set__title:active::before {
+  background-color: #d5d5d5;
+}
+
+.togle-set__input:checked + .togle-set__title:active::before {
+  background-color: #d5d5d5;
+}
+
+@media (min-width: 768px) {
+  .togle-set__item {
+    margin-bottom: 23px;
+  }
+}

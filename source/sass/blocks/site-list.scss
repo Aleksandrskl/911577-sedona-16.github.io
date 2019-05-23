@@ -35,6 +35,18 @@
     min-height: 56px;
   }
 
+  .site-list__item--active a {
+    color: #766357;
+  }
+
+  .site-list__item--active a:hover {
+    color: #604e43;
+  }
+
+  .site-list__item--active a:active {
+    color: rgba(118, 99, 87, 0.3);
+  }
+
   .site-list__link {
     font-size: 14px;
     line-height: 26px;

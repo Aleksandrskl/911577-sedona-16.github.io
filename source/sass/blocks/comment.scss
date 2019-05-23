@@ -1,0 +1,40 @@
+.comment {
+  padding: 40px 21px 15px 21px;
+  margin: 0;
+  text-align: center;
+}
+
+.comment--divided {
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.comment__title {
+  @include text;
+  color: $color-text-title;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.comment__description {
+  line-height: 24px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    padding: 50px 12%;
+  }
+
+  .comment--divided {
+    padding-bottom: 50px;
+    border-bottom: none;
+  }
+
+  .comment__title {
+    @include text(30px);
+    color: $color-text-title;
+    margin-bottom: 35px;
+  }
+}

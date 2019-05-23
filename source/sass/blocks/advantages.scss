@@ -19,9 +19,20 @@
 }
 
 .advantages__exordium {
+  position: relative;
   width: 256px;
   margin-bottom: 21px;
   padding: 38px 32px 27px 32px;
+}
+
+.advantages__exordium::before {
+  content: "";
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  width: 320px;
+  height: 26px;
+  background-image: url("../img/bg-intro-mask-mobile.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -34,6 +45,10 @@
     padding-right: 0;
     margin: 0 auto;
     width: 500px;
+  }
+
+  .advantages__exordium::before {
+    background-image: none;
   }
 
   .advantages {

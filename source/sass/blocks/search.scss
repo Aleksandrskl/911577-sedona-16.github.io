@@ -18,19 +18,6 @@
   margin: 0;
 }
 
-.btn {
-  @include text(21px);
-  display: block;
-  width: 100%;
-  padding: 15px 40px;
-  text-transform: uppercase;
-  background-color: $background-color-auxiliary;
-  margin-top: 35px;
-  border: none;
-  color: $color-text-light;
-  cursor: pointer;
-}
-
 .search__button:hover {
   background-color: #669ec0;
 }
@@ -38,6 +25,10 @@
 .search__button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.search__button:disabled {
+  background-color: #e5e5e5;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +51,7 @@
 
 @media (min-width: 1200px) {
   .search {
+    padding-top: 59px;
     padding-bottom: 65px;
   }
 

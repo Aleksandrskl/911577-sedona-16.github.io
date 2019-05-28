@@ -27,6 +27,7 @@
 }
 
 .video__controls {
+  display: flex;
   position: relative;
   width: 280px;
   padding-top: 26px;
@@ -83,7 +84,7 @@
 
 .video__replay {
   margin-left: 24px;
-  margin-right: 130px;
+  margin-right: 136px;
 }
 
 .video__btn:hover {
@@ -151,7 +152,7 @@
     position: static;
     top: auto;
     padding: 0;
-    margin: 0 23px;
+    margin: 0 28px;
     width: 390px;
     display: inline-block;
     vertical-align: middle;

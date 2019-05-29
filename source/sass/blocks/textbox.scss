@@ -52,6 +52,26 @@
   opacity: 1;
 }
 
+.textbox__input:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.textbox__input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.textbox__input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.textbox__input:-ms-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 .textbox__input:hover {
   background-color: #e5e5e5;
 }

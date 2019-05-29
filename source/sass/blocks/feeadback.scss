@@ -54,6 +54,19 @@
   width: 100%;
 }
 
+.feeadback__button:hover {
+  background-color: #669ec0;
+}
+
+.feeadback__button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.feeadback__button:disabled {
+  background-color: #e5e5e5;
+}
+
 @media (min-width: $tablet-width) {
   .feeadback {
     margin: 0 60px;

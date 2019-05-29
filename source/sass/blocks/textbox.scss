@@ -47,6 +47,11 @@
   outline: none;
 }
 
+.textbox__input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 .textbox__input:hover {
   background-color: #e5e5e5;
 }
